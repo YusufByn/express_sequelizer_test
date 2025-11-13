@@ -20,7 +20,7 @@ module.exports = {
       author:{
         type: Sequelize.STRING(150),
         allowNull: false,
-        validate: {
+        validate:{
           len: [3, 150]
         }
       },
