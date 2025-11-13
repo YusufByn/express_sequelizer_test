@@ -1,0 +1,5 @@
+# fichier qui ne doivent pas apparaitre dans mon repository gitab
+
+node_modules/
+
+.env
