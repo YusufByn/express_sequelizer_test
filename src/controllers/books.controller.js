@@ -82,7 +82,7 @@ exports.CreateBook = async (req, res) => {
 
         const {title, author, disponibility} = req.body;
 
-        if(!title || typeof title !=='string' || !author || typeof author !=='string' || !disponibility || typeof disponibility !=='boolean'){
+        if(!title || typeof title !=='string' || !author || typeof author !=='string' || typeof disponibility !=='boolean'){
             res.status(404).json({
                 success:false,
                 message:"Votre titre doit être valide, pareil pour l'auteur ainsi que la disponibilité",
